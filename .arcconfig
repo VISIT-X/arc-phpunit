@@ -3,10 +3,9 @@
 	"load" : [
 		".arc/phpunit-seven"
 	],
-	"phpunit": {
-		"include": "\/src\/.*\\.php$",
-		"test.dirs": [
-			"/tests"
-		]
-	}
+	"unit.phpunit.binary": "vendor/bin/phpunit",
+	"unit.phpunit.config": "tests/phpunit.xml.dist",
+	"unit.phpunit.test-dirs": [
+		"tests/unit"
+	]
 }

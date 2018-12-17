@@ -1,4 +1,4 @@
-Arcanist `phpunit` [v7+]
+Arcanist `phpunit` (v7+) module
 ===============================
 
 ## Installation
@@ -38,3 +38,4 @@ composer require visit-x/arc-phpunit --dev
 ```bash
 arc unit
 ```
+

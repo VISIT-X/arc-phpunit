@@ -187,7 +187,7 @@ final class PHPUnit7Engine extends ArcanistUnitTestEngine {
 		$dir  = dirname($path);
 
 		$test_dir_names = $this->getConfigurationManager()->getConfigFromAnySource(
-			'phpunit_test_dirs'
+			'unit.phpunit.test-dirs'
 		);
 
 		if (empty($test_dir_names)) {
@@ -246,7 +246,7 @@ final class PHPUnit7Engine extends ArcanistUnitTestEngine {
 	 */
 	private function prepareConfigFile() {
 		$project_root = $this->projectRoot . DIRECTORY_SEPARATOR;
-		$config       = $this->getConfigurationManager()->getConfigFromAnySource('phpunit_config');
+		$config       = $this->getConfigurationManager()->getConfigFromAnySource('unit.phpunit.config');
 
 		if ($config) {
 			if (Filesystem::pathExists($project_root . $config)) {
@@ -255,8 +255,8 @@ final class PHPUnit7Engine extends ArcanistUnitTestEngine {
 				throw new Exception(pht('PHPUnit configuration file was not found in %s', $project_root . $config));
 			}
 		}
-		$bin = $this->getConfigurationManager()->getConfigFromAnySource(
-			'unit.phpunit.binary');
+		$bin = $this->getConfigurationManager()->getConfigFromAnySource('unit.phpunit.binary');
+
 		if ($bin) {
 			if (Filesystem::binaryExists($bin)) {
 				$this->phpunitBinary = $bin;
