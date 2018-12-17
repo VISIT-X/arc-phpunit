@@ -7,7 +7,7 @@
 /**
  * PHPUnit wrapper.
  */
-final class PHPUnit7Engine extends ArcanistUnitTestEngine {
+class PHPUnit7Engine extends ArcanistUnitTestEngine {
 
 	private $configFile;
 	private $phpunitBinary = __DIR__ . '/../../../phpunit.phar';

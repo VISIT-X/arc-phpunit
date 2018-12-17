@@ -4,7 +4,7 @@
  * @started: 26.06.2018 15:58
  */
 
-final class PHPUnit7Parser extends ArcanistTestResultParser {
+class PHPUnit7Parser extends ArcanistTestResultParser {
 
 	/**
 	 * Parse test results from phpunit json report

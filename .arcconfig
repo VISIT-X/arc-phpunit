@@ -1,8 +1,6 @@
 {
 	"unit.engine": "PHPUnit7Engine",
-	"load" : [
-		".arc/phpunit-seven"
-	],
+	"load" : [".arc/phpunit-seven"],
 	"unit.phpunit.binary": "vendor/bin/phpunit",
 	"unit.phpunit.config": "tests/phpunit.xml.dist",
 	"unit.phpunit.test-dirs": [
