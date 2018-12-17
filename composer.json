@@ -1,0 +1,19 @@
+{
+    "name": "campoint/arc-phpunit",
+    "description": "Arcanist util to run tests and generate code coverage reports for phpunit7 format.",
+    "keywords": ["arc", "phpunit7", "unit-test", "testing", "phabricator"],
+    "type": "library",
+    "require": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit -c tests/phpunit.xml.dist"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Igor Timoshenkov",
+            "email": "it@campoint.net"
+        }
+    ]
+}

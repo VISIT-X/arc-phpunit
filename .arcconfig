@@ -1,0 +1,12 @@
+{
+	"unit.engine": "PHPUnit7Engine",
+	"load" : [
+		".arc/phpunit-seven"
+	],
+	"phpunit": {
+		"include": "\/src\/.*\\.php$",
+		"test.dirs": [
+			"/tests"
+		]
+	}
+}
