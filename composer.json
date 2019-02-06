@@ -1,5 +1,5 @@
 {
-    "name": "campoint/arc-phpunit",
+    "name": "visit-x/arc-phpunit",
     "description": "Arcanist util to run tests and generate code coverage reports for phpunit7 format.",
     "keywords": ["arc", "phpunit7", "unit-test", "testing", "phabricator"],
     "type": "library",
