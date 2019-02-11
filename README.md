@@ -24,6 +24,7 @@ composer require visit-x/arc-phpunit --dev
 
 ```json
 // .arcconfig
+"unit.engine": "PHPUnit7Engine",
 "unit.phpunit.binary": "./vendor/bin/phpunit",
 "unit.phpunit.config": "./path/to/phpunit.xml",
 "unit.phpunit.test-dirs": [
