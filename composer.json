@@ -3,8 +3,9 @@
     "description": "Arcanist util to run tests and generate code coverage reports for phpunit7 format.",
     "keywords": ["arc", "phpunit7", "unit-test", "testing", "phabricator"],
     "type": "library",
+    "minimum-stability": "dev",
     "require": {
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "^8.0"
     },
     "scripts": {
         "test": "./vendor/bin/phpunit -c tests/phpunit.xml.dist"

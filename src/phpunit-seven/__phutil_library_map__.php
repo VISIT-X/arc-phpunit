@@ -9,8 +9,8 @@
 phutil_register_library_map(array(
 	'__library_version__' => 2,
 	'class'               => array(
-		'PHPUnit7Engine' => 'src/PHPUnit7Engine.php',
-		'PHPUnit7Parser' => 'src/PHPUnit7Parser.php',
+		'PHPUnit7Engine' => 'lib/PHPUnit7Engine.php',
+		'PHPUnit7Parser' => 'lib/PHPUnit7Parser.php',
 	),
 	'function'            => [],
 	'xmap'                => array(
