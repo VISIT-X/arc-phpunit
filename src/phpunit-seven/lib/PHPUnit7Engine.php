@@ -66,7 +66,7 @@ class PHPUnit7Engine extends ArcanistUnitTestEngine {
 		$config    = $this->configFile ? csprintf('-c %s', $this->configFile) : null;
 		$stderr    = '-d display_errors=stderr';
 		$testsPath = implode('|', array_unique($this->affectedTests));
-		$cmd       = '%C %C %C %s %C --filter %s';
+		$cmd       = '%C %C %C --log-junit %s %C --filter %s';
 
 		$future   = new ExecFuture($cmd, $this->phpunitBinary, $config, $stderr, $jsonTmp, $clover, $testsPath);
 		$tmpfiles = ['json' => $jsonTmp, 'clover' => $cloverTmp];
