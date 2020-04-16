@@ -4,7 +4,7 @@ Arcanist `phpunit` [v7+]
 ## Installation
 
 ```bash
-composer require visit-x/arc-phpunit --dev
+composer require visit-x/arc-phpunit
 ```
 
 ## Configuration
@@ -15,7 +15,7 @@ composer require visit-x/arc-phpunit --dev
 // .arcconfig
 "load": [
 	...
-	"./vendor/visit-x/arc-phpunit/.arc/phpunit-seven"
+	"./vendor/visit-x/arc-phpunit/src/phpunit-seven"
 ]
 ...
 ```
