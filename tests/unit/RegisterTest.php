@@ -33,7 +33,7 @@ class RegisterTest extends \PHPUnit\Framework\TestCase {
 	 */
 	public static $file;
 
-	public function setUp() {
+	public function setUp(): void {
 		static::$mapperArguments = [];
 	}
 
